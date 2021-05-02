@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Assignment 2</title>
+		<link rel="stylesheet" href="game.css" />
+		<script src="game.js"></script>
+	</head>
+
+	<body>
+
+		<div class="hud">
+			<ul class="health" id="health">
+				<li class="live"></li>
+				<li class="live"></li>
+				<li class="live"></li>
+			</ul>
+		</div>
+
+		<div class="start" id="start" onclick="start(this)">
+			Start
+		</div>
+		<div class="start" id="resume" style="visibility: hidden;">
+			Play Again
+		</div>
+		<div class="start" id="over" style="visibility: hidden;">
+			Game Over!!!
+		</div>
+
+		<div class="sky" id="sky">
+
+		</div>
+		
+
+
+		<div id="player" class="character stand down">
+			<div class="head">
+			</div>
+
+			<div class="body">
+			</div>
+
+			<div class="weapon bow">
+			</div>
+		</div>
+
+		<div class="scores">Score: <span id="score">0</span> <br/> 
+			Level: <span id="level">1</span></div>
+
+		<aside id="guest" style="visibility: hidden;">
+			<br/><br/><br/><br/><br/>
+			<h2>Please Enter Your Name</h2>
+			<form name="reg">
+			<input type="text" id="name" name="name">
+			<button id="btn" type="button" class="button">Save</button>
+			</form>
+		</aside>
+
+		<aside id="logged" style="visibility: hidden;">
+			<br/><br/><br/><br/><br/>
+			<h2>Hello <span id='username'></span></h2>
+			<h3>Highest Score: <span id="highest"></span></h3>
+			<br/><br/>
+			<button id="logout" onclick="logOut()" type="button" class="button">Logout</button>
+		
+		</aside>
+
+	</body>
+</html>
